@@ -34,5 +34,6 @@ void Esfera::Dibuja()
 
 void Esfera::Mueve(float t)
 {
-
+centro.x=centro.x + velocidad.x * t;
+centro.y=centro.y + velocidad.y * t;
 }
