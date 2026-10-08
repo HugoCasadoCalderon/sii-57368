@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/tenis.dir/link.d CMakeFiles/tenis.dir/src/tenis.cpp.o CMakeFiles/tenis.dir/src/Mundo.cpp.o CMakeFiles/tenis.dir/src/Esfera.cpp.o CMakeFiles/tenis.dir/src/Plano.cpp.o CMakeFiles/tenis.dir/src/Raqueta.cpp.o CMakeFiles/tenis.dir/src/Vector2D.cpp.o -o tenis  -lglut -lGL -lGLU

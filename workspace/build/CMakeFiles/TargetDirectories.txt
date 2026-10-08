@@ -1,0 +1,3 @@
+/home/hugocasado/hugo/sii-57368/workspace/build/CMakeFiles/tenis.dir
+/home/hugocasado/hugo/sii-57368/workspace/build/CMakeFiles/edit_cache.dir
+/home/hugocasado/hugo/sii-57368/workspace/build/CMakeFiles/rebuild_cache.dir
