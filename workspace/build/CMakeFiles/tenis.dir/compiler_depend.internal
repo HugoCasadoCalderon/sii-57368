@@ -221,6 +221,7 @@ CMakeFiles/tenis.dir/src/Esfera.cpp.o
 
 CMakeFiles/tenis.dir/src/Mundo.cpp.o
  /home/hugocasado/hugo/sii-57368/workspace/src/Mundo.cpp
+ /home/hugocasado/hugo/sii-57368/workspace/include/DatosMemCompartida.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Esfera.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Mundo.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Plano.h
@@ -414,6 +415,11 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mman-linux.h
+ /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h
+ /usr/include/x86_64-linux-gnu/bits/mman-shared.h
+ /usr/include/x86_64-linux-gnu/bits/mman.h
+ /usr/include/x86_64-linux-gnu/bits/mman_ext.h
  /usr/include/x86_64-linux-gnu/bits/openat2.h
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h
@@ -490,6 +496,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
+ /usr/include/x86_64-linux-gnu/sys/mman.h
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
  /usr/include/x86_64-linux-gnu/sys/stat.h
@@ -1192,6 +1199,7 @@ CMakeFiles/tenis.dir/src/Vector2D.cpp.o
 
 CMakeFiles/tenis.dir/src/tenis.cpp.o
  /home/hugocasado/hugo/sii-57368/workspace/src/tenis.cpp
+ /home/hugocasado/hugo/sii-57368/workspace/include/DatosMemCompartida.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Esfera.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Mundo.h
  /home/hugocasado/hugo/sii-57368/workspace/include/Plano.h

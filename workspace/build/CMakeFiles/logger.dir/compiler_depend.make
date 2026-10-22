@@ -149,6 +149,42 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
 
+logger: /lib64/ld-linux-x86-64.so.2 \
+  /usr/lib/x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/x86_64-linux-gnu/crti.o \
+  /usr/lib/x86_64-linux-gnu/crtn.o \
+  /usr/lib/x86_64-linux-gnu/libc.so \
+  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
+  /usr/lib/x86_64-linux-gnu/libc.so.6 \
+  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  /usr/lib/x86_64-linux-gnu/libm.so.6 \
+  /usr/lib/x86_64-linux-gnu/libmvec.so.1 \
+  CMakeFiles/logger.dir/src/logger.cpp.o
+
+
+/usr/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
+
+/usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/lib/x86_64-linux-gnu/libc.so:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
 
@@ -162,6 +198,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
+
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
@@ -170,11 +208,15 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/lib64/ld-linux-x86-64.so.2:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -183,6 +225,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 /usr/include/linux/stddef.h:
 
 /usr/include/linux/falloc.h:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
 
 /usr/include/linux/openat2.h:
 
@@ -201,6 +245,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+CMakeFiles/logger.dir/src/logger.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -234,6 +280,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 
 /usr/include/c++/15/bit:
 
+/usr/lib/x86_64-linux-gnu/crti.o:
+
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -256,6 +304,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 
 /usr/include/c++/15/bits/std_abs.h:
 
+/usr/lib/x86_64-linux-gnu/libm.so.6:
+
 /usr/include/c++/15/debug/assertions.h:
 
 /usr/include/asm-generic/int-ll64.h:
@@ -263,6 +313,8 @@ CMakeFiles/logger.dir/src/logger.cpp.o: /home/hugocasado/hugo/sii-57368/workspac
 /usr/include/c++/15/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
+/usr/lib/x86_64-linux-gnu/libmvec.so.1:
 
 /home/hugocasado/hugo/sii-57368/workspace/src/logger.cpp:
 

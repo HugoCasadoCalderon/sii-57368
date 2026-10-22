@@ -173,6 +173,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: \
  /home/hugocasado/hugo/sii-57368/workspace/include/Esfera.h \
  /home/hugocasado/hugo/sii-57368/workspace/include/Vector2D.h \
  /home/hugocasado/hugo/sii-57368/workspace/include/Raqueta.h \
+ /home/hugocasado/hugo/sii-57368/workspace/include/DatosMemCompartida.h \
  /home/hugocasado/hugo/sii-57368/workspace/include/glut.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
@@ -223,4 +224,10 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: \
  /usr/include/c++/15/tr1/modified_bessel_func.tcc \
  /usr/include/c++/15/tr1/poly_hermite.tcc \
  /usr/include/c++/15/tr1/poly_laguerre.tcc \
- /usr/include/c++/15/tr1/riemann_zeta.tcc
+ /usr/include/c++/15/tr1/riemann_zeta.tcc \
+ /usr/include/x86_64-linux-gnu/sys/mman.h \
+ /usr/include/x86_64-linux-gnu/bits/mman.h \
+ /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
+ /usr/include/x86_64-linux-gnu/bits/mman_ext.h

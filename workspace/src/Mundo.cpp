@@ -13,6 +13,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <math.h>
+#include <sys/mman.h>
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -158,7 +159,16 @@ void CMundo::OnTimer(int value)
 		if(puntos1>=3){exit(0);}
 	}
 	
-
+	datos_bot->esfera=esfera;
+	datos_bot->raqueta1=jugador1;
+	if(datos_bot->accion==1)
+	{
+	CMundo::OnKeyboardDown('w',0,0);
+	}
+	if(datos_bot->accion==-1)
+	{
+	CMundo::OnKeyboardDown('s',0,0);
+	}
 }
 
 void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
@@ -177,8 +187,6 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
-if((tuberia_fd=open("FIFO",O_WRONLY))<0){
-perror("No se puede abrir la tuberia FIFO");}
 	Plano p;
 //pared inferior
 	p.x1=-7;p.y1=-5;
@@ -207,4 +215,26 @@ perror("No se puede abrir la tuberia FIFO");}
 	jugador2.g=0;
 	jugador2.x1=6;jugador2.y1=-1;
 	jugador2.x2=6;jugador2.y2=1;
+	
+	if((tuberia_fd=open("FIFO",O_WRONLY))<0)
+	{ perror("No se puede abrir la tuberia FIFO");}
+	
+	char *direccion;
+	int fd_bot;
+	fd_bot=open("MemCompartida",O_RDWR|O_CREAT|O_TRUNC,0600);
+	if(fd_bot==-1)
+	{
+	perror("No se puede abrir el archivo");
+	}
+	ftruncate(fd_bot,sizeof(DatosMemCompartida));
+	
+	direccion=(char*)mmap(NULL,sizeof(DatosMemCompartida),PROT_READ|PROT_WRITE,MAP_SHARED,fd_bot,0);
+	if(direccion == MAP_FAILED)
+	{
+	perror("Error al realizar la proyeccion");
+	}
+	
+	close(fd_bot);
+	datos_bot=(DatosMemCompartida*)direccion;
+
 }

@@ -56,4 +56,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tenis.dir/DependInfo.cmake"
   "CMakeFiles/logger.dir/DependInfo.cmake"
+  "CMakeFiles/bot.dir/DependInfo.cmake"
   )

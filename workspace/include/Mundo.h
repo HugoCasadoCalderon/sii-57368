@@ -14,6 +14,7 @@
 
 #include "Esfera.h"
 #include "Raqueta.h"
+#include "DatosMemCompartida.h"
 
 struct puntuacion{
 int jugador;
@@ -44,6 +45,8 @@ public:
 	
 	int tuberia_fd;
 	puntuacion p;
+	
+	DatosMemCompartida *datos_bot;
 };
 
 #endif // !defined(AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_)
