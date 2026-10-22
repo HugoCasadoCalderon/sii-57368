@@ -8,6 +8,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <math.h>
 
 //////////////////////////////////////////////////////////////////////
@@ -21,7 +25,7 @@ CMundo::CMundo()
 
 CMundo::~CMundo()
 {
-
+close(tuberia_fd);
 }
 
 void CMundo::InitGL()
@@ -135,6 +139,10 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=2+2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=2+2*rand()/(float)RAND_MAX;
 		puntos2++;
+		p.jugador=2;
+		p.punto=puntos2;
+		write(tuberia_fd,&p,sizeof(puntuacion));
+		if(puntos2>=3){ exit(0);}
 	}
 
 	if(fondo_dcho.Rebota(esfera))
@@ -144,7 +152,12 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=-2-2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=-2-2*rand()/(float)RAND_MAX;
 		puntos1++;
+		p.jugador=1;
+		p.punto=puntos1;
+		write(tuberia_fd,&p,sizeof(puntuacion));
+		if(puntos1>=3){exit(0);}
 	}
+	
 
 }
 
@@ -164,6 +177,8 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
+if((tuberia_fd=open("FIFO",O_WRONLY))<0){
+perror("No se puede abrir la tuberia FIFO");}
 	Plano p;
 //pared inferior
 	p.x1=-7;p.y1=-5;

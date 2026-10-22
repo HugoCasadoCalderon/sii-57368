@@ -129,6 +129,19 @@ tenis/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/build
 .PHONY : tenis/fast
 
+#=============================================================================
+# Target rules for targets named logger
+
+# Build rule for target.
+logger: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger
+.PHONY : logger
+
+# fast build rule for target.
+logger/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/build
+.PHONY : logger/fast
+
 src/Esfera.o: src/Esfera.cpp.o
 .PHONY : src/Esfera.o
 
@@ -249,6 +262,30 @@ src/Vector2D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Vector2D.cpp.s
 .PHONY : src/Vector2D.cpp.s
 
+src/logger.o: src/logger.cpp.o
+.PHONY : src/logger.o
+
+# target to build an object file
+src/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/src/logger.cpp.o
+.PHONY : src/logger.cpp.o
+
+src/logger.i: src/logger.cpp.i
+.PHONY : src/logger.i
+
+# target to preprocess a source file
+src/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/src/logger.cpp.i
+.PHONY : src/logger.cpp.i
+
+src/logger.s: src/logger.cpp.s
+.PHONY : src/logger.s
+
+# target to generate assembly for a file
+src/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/src/logger.cpp.s
+.PHONY : src/logger.cpp.s
+
 src/tenis.o: src/tenis.cpp.o
 .PHONY : src/tenis.o
 
@@ -281,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... logger"
 	@echo "... tenis"
 	@echo "... src/Esfera.o"
 	@echo "... src/Esfera.i"
@@ -297,6 +335,9 @@ help:
 	@echo "... src/Vector2D.o"
 	@echo "... src/Vector2D.i"
 	@echo "... src/Vector2D.s"
+	@echo "... src/logger.o"
+	@echo "... src/logger.i"
+	@echo "... src/logger.s"
 	@echo "... src/tenis.o"
 	@echo "... src/tenis.i"
 	@echo "... src/tenis.s"
